@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Personal Portfolio</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>U<span class="span">A</span></h1>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a href="#" onclick="hideUl()">Home</a></li>
+                <li><a href="#" onclick="hideUl()">About</a></li>
+                <li><a href="#" onclick="hideUl()">Projects</a></li>
+                <li><a href="#" onclick="hideUl()">Contact</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <img src="images/icon-hamburger.svg" alt="">
+            <!-- <img class="close" src="images/icon-close.svg" alt=""> -->
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="zoom-in">
+            <h1>Hello, I'm <span class="span">Ugbe Adie</span></h1>
+            <p>I'm A Frontend Web Developer</p>
+            <a href="#" class="btn">Download Resume</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content" data-aos="fade-up">
+            <div class="about-left">
+                <h1>About Me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis consequuntur dolore excepturi repellat, temporibus
+                    recusandae! Blanditiis dolorem velit cum, possimus sit,
+                    voluptatibus quae accusantium optio cumque ullam aspernatur
+                    ex ipsa veritatis esse quisquam incidunt qui eius modi iusto
+                    corrupti! Accusantium inventore quas exercitationem delectus
+                    molestias ratione non pariatur numquam minus?
+                </p>
+            </div>
+            <div class="about-right">
+                <h1>Skills</h1>
+                <button>html</button>
+                <button>css</button>
+                <button>javascript</button>
+                <button>Bootstrap</button>
+                <button>React</button>
+                <button>Git</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="project-header">
+            <h1>Projects</h1>
+            <p>Have a look at my work</p>
+        </div>
+        <div class="project-container">
+            <div class="project-card p-card1">
+                <!-- <div> -->
+                <img src="images/ecommerce.png" alt="">
+                <!-- </div> -->
+                <div>
+                <h3>LoopStudio Landing Page</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Cupiditate quasi eos ea esse dignissimos illum
+                    aliquam quis hic perferendis unde?</p>
+                <div class="p-btn">    
+                <a href="https://ugbe-ecommerce.netlify.app/" class="btn1">Live Site</a>
+                <a href="https://github.com/ugbeadie/e-commerce" class="btn2">Source Code</a>
+                </div>
+                </div>
+            </div>
+            <div class="project-card p-card2" data-aos="fade-left">
+                <div>
+                    <h3>LoopStudio Landing Page</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate quasi eos ea esse dignissimos illum
+                        aliquam quis hic perferendis unde?</p>
+                    <div class="p-btn">
+                        <a href="https://ugbeloopstudio.netlify.app/" class="btn1">Live Site</a>
+                        <a href="https://github.com/ugbeadie/loopstudio" class="btn2">Source Code</a>
+                    </div>
+                </div>
+                <!-- <div> -->
+                    <img src="images/loopstudio.png" alt="">
+                <!-- </div> -->
+            </div>
+            <div class="project-card p-card3" data-aos="fade-right">
+                <!-- <div> -->
+                    <img src="images/manage.png" alt="">
+                <!-- </div> -->
+                <div>
+                    <h3>LoopStudio Landing Page</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate quasi eos ea esse dignissimos illum
+                        aliquam quis hic perferendis unde?</p>
+                    <div class="p-btn">
+                        <a href="https://ugbemanage.netlify.app/" class="btn1">Live Site</a>
+                        <a href="https://github.com/ugbeadie/manage" class="btn2">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card p-card4"data-aos="fade-left">
+                <div>
+                    <h3>LoopStudio Landing Page</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate quasi eos ea esse dignissimos illum
+                        aliquam quis hic perferendis unde?</p>
+                    <div class="p-btn">
+                        <a href="https://ugbeinsure.netlify.app/" class="btn1">Live Site</a>
+                        <a href="https://github.com/ugbeadie/insure-landing-page" class="btn2">Source Code</a>
+                    </div>
+                </div>
+                <!-- <div> -->
+                    <img src="images/insure.png" alt="">
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800
+    });
+</script>   
+
+</body>
+
+</html>
