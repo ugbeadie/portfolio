@@ -329,7 +329,7 @@ nav {
     margin-top: 20px;
     position: absolute;
     top: 45px;
-    right: 20px;
+    right: 0px;
     z-index: 10;
   }
   .nav-items ul {
