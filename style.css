@@ -97,12 +97,13 @@ nav {
 }
 
 .hero-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 150px;
   color: white;
 }
 
@@ -113,7 +114,7 @@ nav {
 
 .hero-content h1 {
   font-size: 40px;
-  word-spacing: 5px;
+  letter-spacing: 0px;
 }
 
 .hero-content p {
@@ -121,16 +122,45 @@ nav {
   color: rgba(209, 210, 222);
 }
 
-.hero-content a {
-  color: white;
-  font-size: 15px;
-  font-weight: 900;
-  text-decoration: none;
-  text-transform: uppercase;
+.hero-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.hero-btn {
   border: 2px solid var(--blue);
-  padding: 10px 30px;
   border-radius: 10px;
-  margin-top: 30px;
+}
+
+.hero-btn a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.resume-btn {
+  padding: 10px 55px;
+  background-color: var(--blue);
+  margin-right: 30px;
+}
+
+.proj-btn {
+  padding: 10px 50px;
+}
+
+.resume-btn:hover {
+  transition: 0.3s ease-in;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.proj-btn:hover {
+  transition: 0.3s ease-in;
+  background-color: var(--blue);
+  cursor: pointer;
 }
 
 .about {
@@ -272,6 +302,12 @@ nav {
   .hero-content p {
     font-size: 30px;
   }
+  .resume-btn {
+    padding: 10px 30px;
+  }
+  .proj-btn {
+    padding: 10px 23px;
+  }
   .project-container {
     padding: 0 20px;
   }
@@ -297,12 +333,6 @@ nav {
 @media screen and (max-width: 460px) {
   * {
     scroll-behavior: smooth;
-  }
-  .hero {
-    height: 91vh;
-  }
-  .hero-content {
-    padding: 120px 20px 0;
   }
   .toggle-button {
     display: flex;
@@ -353,6 +383,15 @@ nav {
     display: flex;
     background-color: black;
   }
+  .hero {
+    height: 91vh;
+  }  
+  .hero-content {
+    padding: 120px 20px 0;
+  }
+  .resume-btn {
+    margin-right: 10px;
+  }
   .about-content {
     display: block;
     /* margin: 80px 30px; */
@@ -390,6 +429,12 @@ nav {
 }
 
 @media screen and (max-width: 350px) {
+  .resume-btn {
+    padding: 5px 20px;
+  }
+  .proj-btn {
+    padding: 5px 15px;
+  }
   .project-card > div {
     padding: 15px;
   }.hero-content h1,.hero-content span,.hero-content p {
