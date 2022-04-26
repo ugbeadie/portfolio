@@ -11,6 +11,17 @@ toggleButton.addEventListener('click', () => {
     document.body.classList.toggle("cross");
 })
 
+window.addEventListener('scroll',  function() {
+    if (window.scrollY > 600) {
+        navMenu.style.position = 'fixed';
+        navMenu.style.backgroundColor = 'rgb(12, 13, 13)';
+    }else{
+        navMenu.style.position = 'absolute';
+        navMenu.style.backgroundColor = "var(--nav-bg)";
+    }
+});
+
+
 // window.addEventListener ('scroll', function() {
 //     let navBar = document.querySelector('nav');
 //     let windowPosition =  window.scrollY > 600;
