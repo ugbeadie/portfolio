@@ -89,7 +89,7 @@ nav {
 
 .hero {
   background-color: rgb(12, 13, 13);
-  /* background-image: url(images/hero.jpg);
+  /* background-image: url(images/paul-volkmer-fX-qWsXl5x8-unsplash.jpg);
   background-size: cover;
   background-position: center; */
   width: 100%;
@@ -103,22 +103,28 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-transform: uppercase;
   padding-top: 150px;
   color: white;
 }
 
 .hero-content .span {
   text-transform: uppercase;
+  font-weight: 700;
   /* font-size: 50px; */
 }
 
 .hero-content h1 {
+  /* text-transform: lowercase; */
   font-size: 40px;
+  font-weight: 300;
   letter-spacing: 0px;
 }
 
 .hero-content p {
+  /* padding-bottom: 30px; */
   font-size: 30px;
+  font-weight: 700;
   color: rgba(209, 210, 222);
 }
 
@@ -144,7 +150,7 @@ nav {
 .resume-btn {
   padding: 10px 55px;
   background-color: var(--blue);
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .proj-btn {
@@ -161,6 +167,26 @@ nav {
   transition: 0.3s ease-in;
   background-color: var(--blue);
   cursor: pointer;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;     
+}
+
+.social-link {
+  transition: 0.5s all ease-in;
+}
+
+.social-link:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.social-link img {
+  padding: 0 20px;
 }
 
 .about {
@@ -392,6 +418,9 @@ nav {
   .resume-btn {
     margin-right: 10px;
   }
+  .social-link img {
+    padding: 0 10px;
+  }
   .about-content {
     display: block;
     /* margin: 80px 30px; */
@@ -431,6 +460,9 @@ nav {
 @media screen and (max-width: 350px) {
   .resume-btn {
     padding: 5px 20px;
+  }
+  .social-link img {
+    padding: 0 5px;
   }
   .proj-btn {
     padding: 5px 15px;
