@@ -60,7 +60,7 @@ nav {
   position: absolute;
   top: 0;
   z-index: 1;
-  /* transition: 0.5s ease-in; */
+  transition: 0.5s ease-in;
 }
 
 .nav-items ul {
@@ -241,7 +241,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .project-header {
