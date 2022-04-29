@@ -254,6 +254,10 @@ nav {
   margin-top: 40px;
 }
 
+.projects {
+  background-color: rgba(10, 12, 39, 0.1);
+}
+
 .project-header {
   height: 40vh;
   display: flex;
