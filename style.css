@@ -198,11 +198,11 @@ nav {
 }
 
 .about {
-  height: 100vh;
+  height: 100%;
 }
 
 .about-content {
-  padding: 0 180px;
+  padding: 0 180px 60px 180px;
 }
 
 .about-head {
@@ -375,7 +375,7 @@ nav {
     font-size: 15px;
   }
   .about-content {
-    padding: 0 30px;
+    padding: 0 30px 60px;
   }
   .proj-btn {
     padding: 10px 23px;
@@ -468,7 +468,7 @@ nav {
     padding: 0 10px;
   }
   .about {
-    height: 100vh;
+    height: 100%;
   }
   .skill-img img {
     width: 60px;
@@ -527,7 +527,7 @@ nav {
   }
   
   .about-intro-text {
-    font-size: 16px;
+    font-size: 18px;
   }
   .skills {
     display: grid;
@@ -552,7 +552,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 1100px) and (max-height:600px) {
+/* @media screen and (max-width: 1100px) and (max-height:600px) {
   .projects {
     margin-top: 120px;
   }
@@ -568,4 +568,4 @@ nav {
   .projects {
     margin-top: 50px;
   }
-}
+} */
