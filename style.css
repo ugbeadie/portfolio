@@ -199,6 +199,7 @@ nav {
 
 .about {
   height: 100%;
+  /* background-color: rgba(10, 12, 39, 0.1); */
 }
 
 .about-content {
@@ -255,7 +256,7 @@ nav {
 }
 
 .projects {
-  /* background-color: rgba(10, 12, 39, 0.1); */
+  background-color: rgba(10, 12, 39, 0.1);
 }
 
 .project-header {
@@ -306,6 +307,7 @@ nav {
 .project-card h3 {
   color: var(--blue);
   font-size: 25px;
+  font-weight: 700;
   /* margin-top: 20px; */
 }
 
@@ -335,6 +337,11 @@ nav {
 .btn1 {
   background-color: var(--blue);
   color: white;
+  font-weight: 700;
+}
+
+btn2 {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1000px) {
