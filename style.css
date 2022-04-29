@@ -481,9 +481,9 @@ nav {
     align-content: center;
     justify-items: center;
   }
-  .projects {
+  /* .projects {
     margin-top: 150px;
-  }
+  } */
   .project-container {
     padding: 0 20px;
   }
