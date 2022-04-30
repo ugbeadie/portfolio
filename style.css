@@ -325,24 +325,30 @@ nav {
 .btn2 {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700px;
-  /* color: white; */
+  font-weight: 700;
   font-size: 15px;
   border: 1px solid var(--blue);
-  /* border-radius: 15px; */
+  border-radius: 10px;
   padding: 10px 15px;
-  /* margin-right: 20px; */
 }
 
 .btn1 {
   background-color: var(--blue);
   color: white;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
-btn2 {
-  font-weight: 700;
+.btn1:hover {
+  background-color: transparent;
+  color: var(--blue);
+  transition: 0.5s ease-in;
 }
+
+.btn2:hover {
+  background-color: var(--blue);
+  transition: 0.5s ease-in;
+}
+
 
 @media screen and (max-width: 1000px) {
   .about-content {
