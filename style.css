@@ -500,7 +500,7 @@ nav {
 
 .submit a {
   font-size: 13px;
-  font-weight: 700;
+  /* font-weight: 700; */
   /* border: 1px solid var(--blue);    */
   color: white;
   background-color: var(--blue);
