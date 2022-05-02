@@ -7,12 +7,12 @@ toggleButton.addEventListener('click', () => {
     navUl.classList.toggle('active');
     navMenu.classList.toggle('active')
     document.body.classList.toggle('hidden')
-    document.body.classList.toggle("black");
+    // document.body.classList.toggle("black");
     document.body.classList.toggle("cross");
 })
 
 window.addEventListener('scroll',  function() {
-    if (window.scrollY > 600) {
+    if (window.scrollY > 500) {
         navMenu.style.position = 'fixed';
         navMenu.style.backgroundColor = 'rgb(12, 13, 13)';
     }else{

@@ -440,9 +440,9 @@ nav {
     height: 30px;
     width: 30px;
   }
-  .black {
+  /* .black {
     --nav-bg: hsl(0, 0%, 0%);
-  }
+  } */
   .logo h1,.span{
     font-size: 25px;
   }
@@ -455,10 +455,10 @@ nav {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: black;
+    /* background-color: black; */
     margin-top: 20px;
     position: absolute;
-    top: 38px;
+    top: 31px;
     right: 0px;
     z-index: 10;
   }
@@ -560,8 +560,7 @@ nav {
   }
   .about-intro-head {
     font-size: 18px;
-  }
-  
+  }  
   .about-intro-text {
     font-size: 15px;
   }
