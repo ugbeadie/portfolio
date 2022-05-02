@@ -464,6 +464,7 @@ nav {
   appearance: none;
   padding: 12px;
   border-radius: 3px;
+  overflow: hidden;
   /* font-size: 15px; */
   transition: 0.3s all;
 }
@@ -489,6 +490,24 @@ nav {
   font-size: 12px;
   color: rgb(34, 56, 156);
   background-color: white;
+}
+
+.submit {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit a {
+  font-size: 13px;
+  font-weight: 700;
+  /* border: 1px solid var(--blue);    */
+  color: white;
+  background-color: var(--blue);
+  padding: 10px 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 
