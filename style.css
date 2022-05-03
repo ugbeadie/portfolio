@@ -409,6 +409,12 @@ nav {
   flex-direction: column;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .custom-field {
   position: relative;
   font-size: 15px;
@@ -479,13 +485,13 @@ nav {
   transition: 0.3s all ease;
 }
 
-.custom-field textarea:valid,
-.custom-field textarea:focus {
+.custom-field #message:valid,
+.custom-field #message:focus {
   border-color: var(--blue);
 }
 
-.custom-field textarea:valid+.placeholder,
-.custom-field textarea:focus+.placeholder {
+.custom-field #message:valid+.placeholder,
+.custom-field #message:focus+.placeholder {
   top: 10px;
   font-size: 12px;
   color: rgb(34, 56, 156);
@@ -500,8 +506,6 @@ nav {
 
 .submit a {
   font-size: 13px;
-  /* font-weight: 700; */
-  /* border: 1px solid var(--blue);    */
   color: white;
   background-color: var(--blue);
   padding: 10px 50px;
