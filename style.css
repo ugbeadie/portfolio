@@ -520,7 +520,7 @@ form {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
-  box-shadow: 0 10px 8px -4px rgb(12, 13, 13);
+  box-shadow: 0 10px 8px -4px rgba(12, 13, 13, 0.6);
 }
 
 
