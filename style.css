@@ -464,9 +464,8 @@ form {
   background-color: white;
 }
 
-.message .placeholder {
-  position: absolute;
-  top: 30px;
+textarea {
+  resize: none;
 }
 
 #message {
@@ -505,14 +504,15 @@ form {
   background-color: white;
 }
 
-.submit {
+.submit-div {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   /* box-shadow: 0 10px 8px -8px hsl(12, 88%, 59%); */
 }
 
-.submit a {
+.submit-btn {
+  border: none;
   font-size: 13px;
   color: white;
   background-color: var(--blue);
