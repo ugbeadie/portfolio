@@ -289,6 +289,7 @@ nav {
   margin-bottom: 60px;
   background-color: rgba(10, 12, 39, 0.1);
   border-radius: 20px;
+  box-shadow: 0 10px 15px -4px rgba(12, 13, 13, 0.6);
 }
 
 .project-card > div {
