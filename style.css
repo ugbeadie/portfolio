@@ -320,7 +320,10 @@ nav {
 
 .p-btn {
   padding-top: 40px;
-  /* text-decoration: none; */
+}
+
+.p-btn a {
+  box-shadow: 0 10px 8px -4px rgba(12, 13, 13, 0.6);
 }
 
 .btn1,
@@ -506,6 +509,7 @@ form {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  /* box-shadow: 0 10px 8px -8px hsl(12, 88%, 59%); */
 }
 
 .submit a {
@@ -516,6 +520,7 @@ form {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
+  box-shadow: 0 10px 8px -4px rgb(12, 13, 13);
 }
 
 
@@ -658,7 +663,7 @@ form {
   }
   .hero {
     height: 100vh;
-    padding: 0 0 150px 0;
+    /* padding: 0 0 150px 0; */
   }  
   .hero-content {
     padding: 200px 20px 0;
