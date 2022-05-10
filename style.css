@@ -324,7 +324,7 @@ nav {
 }
 
 .p-btn a {
-  box-shadow: 0 10px 8px -4px rgba(12, 13, 13, 0.6);
+  box-shadow: 0 7px 8px -4px rgba(12, 13, 13, 0.6);
 }
 
 .btn1,
@@ -521,7 +521,7 @@ textarea {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
-  box-shadow: 0 10px 8px -4px rgba(12, 13, 13, 0.6);
+  box-shadow: 0 7px 8px -4px rgba(12, 13, 13, 0.6);
 }
 
 
@@ -740,6 +740,15 @@ textarea {
     justify-content: center;
     align-items: center;
     font-size: 22px;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials img {
+    margin: 0;
+    padding: 10px;
   }
 }
 
