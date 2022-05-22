@@ -11,7 +11,7 @@
 
 :root {
   --blue: rgb(34, 56, 156);
-  --black: rgb(12, 13, 13);
+  --black: h;
   --toggle-btn: url(images/icon-hamburger.svg);
 }
 
@@ -288,11 +288,40 @@ nav {
   gap: 20px;
 }
 
-.project {
-  position: relative;
-  color: white;
+.proj-img {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
 }
 
+.project-content {
+  padding: 10px;
+  background-color: rgb(12, 13, 13,0.1);
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.project-content h1 {
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  color: var(--blue);
+}
+
+.project-content p {
+  margin-bottom: 10px;
+}
+
+.btn1,.btn2 {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--blue);
+}
+
+
+/* 
 .proj-img {
   width: 100%;
   height: 200px;
@@ -301,43 +330,21 @@ nav {
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   width: 100%;
   height: 100%;
-  background: rgba(12, 13, 13, 0.7);
-  backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   padding: 10px;
-  opacity: 0;
-  border-radius: 5px;
-  transition: 0.3s all;
 }
 
 .overlay h1 {
   font-weight: 700;
   text-decoration: underline;
   margin-bottom: 10px;
-}
-
-.overlay > * {
-  transform: translateY(20px);
-  transition: 0.3s all;
-}
-
-.overlay:hover {
-  opacity: 1; 
-  cursor: pointer;
-}
-
-.overlay:hover > * {
-  width: 100%;
-  transform: translateY(0);
 }
 
 .btn1,
@@ -351,7 +358,7 @@ nav {
   padding: 5px;
   background-color: var(--blue);
   border-radius: 5px;
-}
+} */
 
 /* .project-container {
   display: none;
@@ -613,9 +620,6 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  .project-btn {
-    margin-top: 20px;
-  }
   .about-content {
     padding: 50px 100px;
   }
@@ -666,36 +670,13 @@ textarea {
     padding: 0 30px 60px;
   }
   .project-container-desktop {
+    margin: 0 50px;
     max-width: 100%;
-    /* margin: 0 150px; */
     padding-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-  }
-  .proj-btn {
-    padding: 10px 23px;
-  }
-  .project-container {
-    padding: 0 20px;
-  }
-  .project-card {
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .project-card img {
-    border-radius: 20px 20px 0 0;
-  }
-  .p-card2,
-  .p-card4 {
-    flex-direction: column-reverse;
-  }
-  .btn1,
-  .btn2 {
-    padding: 5px 10px;
-  }
+  }  
   .contact-content {
     display: flex;
     flex-direction: column-reverse;
@@ -722,9 +703,6 @@ textarea {
     height: 30px;
     width: 30px;
   }
-  /* .black {
-    --nav-bg: hsl(0, 0%, 0%);
-  } */
   .logo h1,.logo-span{
     font-size: 30px;
   }
@@ -806,32 +784,11 @@ textarea {
     align-content: center;
     justify-items: center;
   }
-  .project-container {
-    padding: 0 20px;
+  .project-container-desktop {
+    margin: 0 20px;
   }
-  .project-header h1 {
-    font-size: 22px;
-  }
-  .project-header p {
-    font-size: 28px;
-  }
-  .project-card {
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    box-shadow: none;
-  }
-  .project-card img {
-    border-radius: 20px 20px 0 0;
-  }
-  .p-card2,
-  .p-card4 {
-    flex-direction: column-reverse;
-  }
-  .btn1,
-  .btn2 {
-    padding: 5px 10px;
+  .project-btn {
+    margin-bottom: 10px;
   }
   .contact-left {
     margin-top: 30px;
@@ -881,20 +838,6 @@ textarea {
   .skill-img img {
     width: 50px;
     height: 50px;
-  }
-  .projects {
-    margin-top: 0;
-  }
-  .project-header p {
-    font-size: 20px;
-  }
-  .proj-btn {
-    padding: 5px 15px;
-  }
-  .project-card > div {
-    padding: 15px;
-  }.hero-content h1,.hero-content span,.hero-content p {
-    font-size: 20px;
   }
   .hero-content a {
     font-size: 12px;
