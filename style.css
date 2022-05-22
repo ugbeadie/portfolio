@@ -666,6 +666,9 @@ textarea {
   .resume-btn a {
     font-size: 15px;
   }
+  .proj-btn {
+    padding: 10px 28px;
+  }
   .about-content {
     padding: 0 30px 60px;
   }
