@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+    <!-- NAVBAR STARTS -->
+
     <nav>
         <div class="logo">
             <h1>U<span class="logo-span">A</span></h1>
@@ -27,6 +30,8 @@
         <div class="toggle-button">
         </div>
     </nav>
+
+    <!-- HERO SCETION STARTS -->
 
     <section class="hero">
         <div class="hero-content" data-aos="zoom-in">
@@ -56,6 +61,8 @@
             </div>
         </div>
     </section>
+
+    <!-- ABOUT SECTION STARTS -->
 
     <section class="about" id="about">
         <div class="about-content" data-aos="fade-up">
@@ -100,6 +107,8 @@
         </div>
     </section>
 
+    <!-- PROJECT SECTION STARTS -->
+
     <section class="projects" id="projects">
         <div class="project-header">
             <h1>Projects</h1>
@@ -107,7 +116,7 @@
         </div>
         
         <div class="project-container-desktop">
-            <div class="project1 project">
+            <div class="project1 project" data-aos="fade-down-right">
                 <div class="proj-img">
                     <img class="proj-img" src="images/ecommerce.png" alt="">
                 </div>                
@@ -125,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="project2 project">
+            <div class="project2 project" data-aos="fade-down">
                 <div class="proj-img">
                     <img class="proj-img" src="images/loopstudio.png" alt="">
                 </div>
@@ -143,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="project3 project">
+            <div class="project3 project" data-aos="fade-down-left">
                 <div class="proj-img">
                     <img class="proj-img" src="images/manage.png" alt="">
                 </div>
@@ -161,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="project4 project">
+            <div class="project4 project" data-aos="fade-up-right">
                 <div class="proj-img">
                     <img class="proj-img" src="images/weathermast.png" alt="">
                 </div>
@@ -180,7 +189,7 @@
                 </div>
             </div>
 
-            <div class="project5 project">
+            <div class="project5 project"data-aos="fade-up">
                 <div class="proj-img">
                     <img class="proj-img" src="images/insure.png" alt="">
                 </div>
@@ -197,68 +206,10 @@
                     </div>
                 </div>
             </div>
-            
         
-        <!-- MOBILE PROJECT STARTS -->
-        
-        <!-- <div class="project-container">
-            <div class="project-card p-card1">
-                <img src="images/ecommerce.png" alt="">
-                <div>
-                <h3>Sneakers E-Commerce Store</h3>
-                <p>An e-commerce store built using html5,
-                   css3, JavaScript.It has a carousel section made using bootstrap. 
-                   Design inspired by frontend mentors.</p>
-                <div class="p-btn">    
-                <a target="blank" href="https://ugbe-ecommerce.netlify.app/" class="btn1">Live Site</a>
-                <a target="blank" href="https://github.com/ugbeadie/e-commerce" class="btn2">View Code</a>
-                </div>
-                </div>
-            </div>
-            <div class="project-card p-card2" data-aos="fade-left">
-                <div>
-                    <h3>LoopStudio Landing Page</h3>
-                    <p>A landing page built using html5, css3,
-                       JavaScript. It has a responsive css grid section. 
-                       Design inspired by frontend mentors.</p>
-                    <div class="p-btn">
-                        <a target="blank" href="https://ugbeloopstudio.netlify.app/" class="btn1">Live Site</a>
-                        <a target="blank" href="https://github.com/ugbeadie/loopstudio" class="btn2">View Code</a>
-                    </div>
-                </div>
-                    <img src="images/loopstudio.png" alt="">
-            </div>
-            <div class="project-card p-card3" data-aos="fade-right">
-            
-                    <img src="images/manage.png" alt="">
-            
-                <div>
-                    <h3>A Management Website</h3>
-                    <p>Manage makes it simple for software teams to plan day-to-day 
-                       tasks while keeping the larger team goals in view. Built
-                       using html5, css3, JavaScript. It has a testimonial slider made
-                       using bootstrap and an email validation form. Design
-                       inspired by frontend mentors.</p>
-                    <div class="p-btn">
-                        <a target="blank" href="https://ugbemanage.netlify.app/" class="btn1">Live Site</a>
-                        <a target="blank" href="https://github.com/ugbeadie/manage" class="btn2">View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card p-card4"data-aos="fade-left">
-                <div>
-                    <h3>Insure Landing Page</h3>
-                    <p>An insurance landing page built with html5, css3 and JavaScript.
-                       Designed inspired by frontend mentors.</p>
-                    <div class="p-btn">
-                        <a target="blank" href="https://ugbeinsure.netlify.app/" class="btn1">Live Site</a>
-                        <a target="blank" href="https://github.com/ugbeadie/insure-landing-page" class="btn2">View Code</a>
-                    </div>
-                </div>
-                    <img src="images/insure.png" alt="">
-            </div>
-        </div> -->
     </section>
+
+    <!-- CONTACT SECTION STARTS -->
 
     <section class="contact" id="contact">
         <div class="contact-content" data-aos="zoom-in">
@@ -313,7 +264,8 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init({
-        duration: 800
+        duration: 1000,
+        once: true,
     });
 </script>   
 
