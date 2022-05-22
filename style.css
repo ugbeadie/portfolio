@@ -787,6 +787,9 @@ textarea {
   .project-container-desktop {
     margin: 0 20px;
   }
+  .project-header p {
+    font-size: 28px;
+  }
   .project-btn {
     margin-bottom: 10px;
   }
