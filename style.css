@@ -818,6 +818,9 @@ textarea {
 }
 
 @media screen and (max-width: 350px) {
+  .proj-btn {
+    padding: 5px 18px;
+  }
   .resume-btn {
     padding: 5px 20px;
   }
