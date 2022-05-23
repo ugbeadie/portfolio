@@ -184,7 +184,7 @@ nav {
 }
 
 .social-link {
-  transition: 0.5s all ease-in;
+  transition: 0.3s all ease-in;
 }
 
 .social-link:hover {
@@ -293,6 +293,10 @@ nav {
 }
 
 .project-content {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 10px;
   background-color: rgb(12, 13, 13,0.1);
   text-align: center;
@@ -723,5 +727,22 @@ textarea {
     font-size: 12px;
     margin-top: 20px;
     /* padding: 5px 10px; */
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .custom-field,.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .custom-field input {
+    width: 250px;
+  }
+  .custom-field .placeholder {
+    left: 35px;
+  }
+  #message {
+    width: 250px;
   }
 }
