@@ -10,7 +10,7 @@
 
 :root {
   --blue: rgb(34, 56, 156);
-  --black: rgb(12, 13, 13,);
+  --black: rgb(12, 13, 13);
   --toggle-btn: url(images/icon-hamburger.svg);
 }
 
@@ -142,6 +142,66 @@ nav {
 }
 
 .hero-btn {
+  position: relative;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.hero-btn a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.resume-btn {
+  padding: 10px 55px;
+  margin-right: 20px;
+  background-color: var(--blue);
+  z-index: 1;
+}
+
+.resume-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  background-color: rgb(12, 13, 13);
+  border-radius: 10px;
+  transition: 0.2s all ease-in-out;
+}
+
+.proj-btn {
+  padding: 10px 50px;
+  z-index: 1;
+}
+
+.proj-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: rgb(34, 56, 156);
+  transition: 0.2s all ease-in-out;
+}
+
+.proj-btn:hover::before,.resume-btn:hover::before {
+  transform: scaleX(1);
+}
+
+/* .hero-btn {
   border: 2px solid var(--blue);
   border-radius: 10px;
 }
@@ -174,7 +234,7 @@ nav {
   transition: 0.3s ease-in;
   background-color: var(--blue);
   cursor: pointer;
-}
+} */
 
 .hero-icons {
   display: flex;
@@ -293,32 +353,74 @@ nav {
 }
 
 .project-content {
-  min-height: 200px;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
+  min-height: 200px;
   padding: 10px;
   background-color: rgb(12, 13, 13,0.1);
   text-align: center;
   border-radius: 0 0 15px 15px;
+
 }
 
 .project-content h1 {
   font-weight: 700;
   text-decoration: underline;
-  margin-bottom: 15px;
+  margin-top: 15px;
   color: var(--blue);
 }
 
 .project-content p {
-  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.project-btn {
+  margin-top: 12px;
+  position: relative;
 }
 
+.project-btn span {
+  padding: 0 8px;
+}
+
+/* .project-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+
 .btn1,.btn2 {
-  color: var(--blue);
-  font-weight: 700;
+  position: relative;
+  background-color: rgba(34, 56, 156, 0.2);
+  padding: 4px 10px;
   text-decoration: none;
-  border-bottom: 2px solid var(--blue);
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(34, 56, 156);
+}
+
+.btn1::before,
+.btn2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid rgb(34, 56, 156);
+  transition: 0.2s all ease-in-out;
+}
+
+.btn1:hover::before {
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+}
+
+.btn2:hover::before {
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
 }
 
 /* CONTACT SECTION STARTS */
@@ -507,9 +609,20 @@ textarea {
 }
 
 @media screen and (max-width: 700px) {
+  .proj-btn:hover::before,
+  .resume-btn:hover::before {
+    transform: scaleX(0);
+  }
   .project-container-desktop {
     max-width: 100%;
     margin: 0 30px;
+  }
+  
+  .btn1:hover::before,.btn2:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   .about-head {
     height: 30vh;
@@ -525,7 +638,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 640px) {
   nav {
     padding: 10px 18px;
   }
