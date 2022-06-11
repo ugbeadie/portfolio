@@ -175,7 +175,7 @@ nav {
   z-index: -1;
   transform: scaleX(0);
   transform-origin: right;
-  background-color: rgba(12, 13, 13, 0.7);
+  background-color: rgba(5, 16, 68, 1);
   border-radius: 10px;
   transition: 0.2s all ease-in-out;
 }
