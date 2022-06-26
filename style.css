@@ -294,6 +294,12 @@ nav {
 
 .projects {
   background-color: rgba(12, 13, 13, 0.1);
+  height: 100%;
+}
+
+.project {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .project-header {
@@ -321,7 +327,7 @@ nav {
   padding-bottom: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 30px;
 }
 
 .proj-img {
