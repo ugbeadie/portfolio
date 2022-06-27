@@ -11,6 +11,7 @@
 :root {
   --blue: rgb(34, 56, 156);
   --black: rgb(12, 13, 13);
+  --nav-bg: transparent;
   --toggle-btn: url(images/icon-hamburger.svg);
 }
 
@@ -79,6 +80,10 @@ nav {
   border-radius: 5px;
   padding: 2px 5px;
   font-weight: 700;
+}
+
+.black {
+  --nav-bg: rgb(12, 13, 13);  
 }
 
 .logo h1, .logo-span {
@@ -208,13 +213,6 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-}
-
-.hero-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;     
 }
 
 .social-link {
@@ -568,6 +566,40 @@ textarea {
   box-shadow: 0 7px 8px -4px rgba(12, 13, 13, 0.6);
 }
 
+.top-link {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--blue);
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 @media screen and (max-width: 1000px) {
   .project-container-desktop {
@@ -657,6 +689,9 @@ textarea {
   .contact-head-right {
     display: block;
   }
+  .top-link {
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -678,10 +713,11 @@ textarea {
   }
   nav {
     padding: 15px 18px;
-    background-color: transparent;
+    /* background-color: transparent; */
   }
   .nav-items {
     display: none;
+    background-color: rgb(12, 13, 13);
     flex-direction: column;
     width: 100%;
     height: 100vh;
@@ -692,6 +728,7 @@ textarea {
     z-index: 10;
   }
   .nav-items ul {
+    background-color: var(--black);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -707,10 +744,12 @@ textarea {
   .hidden {
     overflow: hidden;
   }
-  .nav-items.active,nav.active {
-    display: flex;
+  nav.black {
     background-color: rgb(12, 13, 13);
-    z-index: 10;
+  }
+  .nav-items.active {
+    display: flex;
+    /* z-index: 10; */
   }
   .hero {
     height: 100vh;

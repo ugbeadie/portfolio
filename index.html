@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Personal Portfolio</title>
@@ -21,11 +22,12 @@
         </div>
         <div class="nav-items">
             <ul>
-                <li><a href="#" onclick="hideUl()">Home</a></li>
+                <li><a href="#home" onclick="hideUl()">Home</a></li>
                 <li><a href="#about" onclick="hideUl()">About</a></li>
                 <li><a href="#projects" onclick="hideUl()">Projects</a></li>
                 <li><a href="#contact" onclick="hideUl()">Contact</a></li>
             </ul>
+            
         </div>
         <div class="toggle-button">
         </div>
@@ -33,7 +35,7 @@
 
     <!-- HERO SCETION STARTS -->
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content" data-aos="zoom-in">
             <h1>Hello, I'm <span class="span">Ugbe Adie</span></h1>
             <p>I'm A Frontend Developer</p>
@@ -259,6 +261,10 @@
             </div>                      
         </div>
     </section>
+
+    <a class="scroll-link top-link" href="#home">
+        <img src="./images/icons8-arrow-up-24.png" alt="">
+    </a>
 
 <script src="script.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
