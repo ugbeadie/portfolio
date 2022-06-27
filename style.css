@@ -604,6 +604,16 @@ textarea {
   }
 }
 
+@keyframes ease-in {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 
 @media screen and (max-width: 1000px) {
   .project-container-desktop {
@@ -755,6 +765,7 @@ textarea {
   }
   nav.black {
     background-color: rgb(12, 13, 13);
+    animation: ease-in 0.1s ease-in;
   }
   .nav-items.active {
     display: flex;
