@@ -19,7 +19,7 @@ window.addEventListener('scroll',  function() {
         topLink.classList.add("show-link");
 
     }else{
-        // navMenu.style.position = 'absolute';
+        navMenu.style.position = 'absolute';
         navMenu.style.backgroundColor = "var(--nav-bg)";
         topLink.classList.remove("show-link");
 
