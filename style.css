@@ -110,11 +110,14 @@ nav {
 /* HERO SECTION STARTS */
 
 .hero {
-  background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(5, 16, 68, 1) 71%, rgba(10, 70, 82, 1) 100%);
   /* background-color: rgb(12, 13, 13); */
+  /* background: rgba(0, 0, 0, 0.8) url(./images/hero-bcg.jpeg);
+  background-size: 100% 100%;
+  background-blend-mode: darken; */
   width: 100%;
-  height: 100vh;
+  /* height: auto; */
+  /* height: 100vh; */
 }
 
 .hero-content {
@@ -125,7 +128,7 @@ nav {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 200px;
+  padding: 220px 0;
   color: white;
 }
 
