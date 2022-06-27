@@ -82,10 +82,6 @@ nav {
   font-weight: 700;
 }
 
-.nav-toggle-icons {
-  display: none;
-}
-
 .black {
   --nav-bg: rgb(12, 13, 13);  
 }
@@ -217,6 +213,13 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;     
 }
 
 .social-link {
@@ -744,11 +747,6 @@ textarea {
     font-size: 25px;
     font-weight: 300;
     opacity: 0.7;
-  }
-  .nav-toggle-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .hidden {
     overflow: hidden;

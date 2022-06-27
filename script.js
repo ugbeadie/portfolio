@@ -6,7 +6,7 @@ const topLink = document.querySelector('.top-link')
 
 toggleButton.addEventListener('click', () => {
     navUl.classList.toggle('active');
-    // navMenu.classList.toggle('black')
+    navMenu.classList.toggle('black')
     document.body.classList.toggle('hidden')
     document.body.classList.toggle('black')
     document.body.classList.toggle("cross");
@@ -19,7 +19,7 @@ window.addEventListener('scroll',  function() {
         topLink.classList.add("show-link");
 
     }else{
-        navMenu.style.position = 'absolute';
+        // navMenu.style.position = 'absolute';
         navMenu.style.backgroundColor = "var(--nav-bg)";
         topLink.classList.remove("show-link");
 
@@ -30,7 +30,7 @@ function hideUl() {
     document.body.classList.toggle("cross");
     document.body.classList.toggle('hidden');
     navUl.classList.toggle('active');
-    // navMenu.classList.toggle('black');
+    navMenu.classList.toggle('black');
     // navMenu.classList.remove('active')
     document.body.classList.toggle("black");    
 }
