@@ -570,6 +570,14 @@ textarea {
   box-shadow: 0 7px 8px -4px rgba(12, 13, 13, 0.6);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 700;
+}
+
 .top-link {
   position: fixed;
   bottom: 30px;

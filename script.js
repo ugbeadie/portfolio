@@ -34,3 +34,6 @@ function hideUl() {
     // navMenu.classList.remove('active')
     document.body.classList.toggle("black");    
 }
+
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();
