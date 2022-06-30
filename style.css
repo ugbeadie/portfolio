@@ -86,10 +86,6 @@ nav {
   display: none;
 }
 
-.black {
-  --nav-bg: rgb(12, 13, 13);  
-}
-
 .logo h1, .logo-span {
   font-family: 'Hubballi',
   cursive;
@@ -775,8 +771,11 @@ footer {
     overflow: hidden;
   }
   nav.black {
-    background-color: rgb(12, 13, 13);
+    /* background-color: rgb(12, 13, 13); */
     animation: ease-in 0.1s ease-in;
+  }
+  .black {
+    --nav-bg: rgb(12, 13, 13);
   }
   .nav-items.active {
     display: flex;
