@@ -403,6 +403,10 @@ nav {
   bottom: calc(2px * -2);
 }
 
+.swiper {
+  display: none;
+}
+
 /* CONTACT SECTION STARTS */
 
 .contact {
@@ -693,13 +697,31 @@ footer {
     padding: 0 30px 60px;
   }
   .project-container-desktop {
+    display: none;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px; */
+  }
+  .swiper {
+    position: relative;
+    display: flex;
     margin: 0 50px;
     max-width: 100%;
     padding-bottom: 60px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }  
+  }
+    .swiper-button-prev,
+    .swiper-button-next {
+      border: 3px solid var(--blue);
+      padding: 20px;
+      border-radius: 90%;
+      position: absolute;
+      top: 35%;
+    }
+  
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      font-size: 30px;
+    }
   .contact-content {
     display: flex;
     flex-direction: column-reverse;
